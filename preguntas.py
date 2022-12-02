@@ -38,7 +38,7 @@ def pregunta_01():
     knn.fit(X,y)
 
     # Retorne el score del clasificador
-    knn.score(X,y)
+    return knn.score(X,y).round(3)
 
 
 def pregunta_02():
@@ -78,4 +78,4 @@ def pregunta_02():
     from sklearn.metrics import confusion_matrix
 
     # Retorne la matriz de confusión
-    confusion_matrix(y, y_pred)
+     return confusion_matrix(y, y_pred)
